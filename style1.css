@@ -22,9 +22,10 @@ body {
     background-color: var(--bg-main);
     color: var(--text-main);
     font-family: "Cursor Gothic", "Inter", sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
     width: 100%;
     position: absolute;
+    /* border: none; */
 }
 
 header {
@@ -77,11 +78,18 @@ nav ul li a {
     text-decoration: none;
 }
 
+.download {
+
+    border: none;
+}
+
 .download a {
+    border: none;
     background-color: var(--text-main);
     color: var(--bg-main);
 }
-.download a:hover{
+
+.download a:hover {
     background-color: var(--bg-hover);
 }
 
@@ -94,13 +102,16 @@ nav ul li a {
 }
 
 .btn {
-    width: 325px;
-    height: 60px;
+    min-width: 250px;
+    min-height: 40px;
+    padding: 10px;
     border-radius: 50px;
     margin-top: 30px;
-    font-size: 25px;
+    font-size: 1rem;
+    border: none;
 }
-button:hover{
+
+button:hover {
     background-color: var(--bg-hover);
 }
 
@@ -184,41 +195,47 @@ button:hover{
     color: var(--text-muted);
 }
 
-.container3{
+
+.container3 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,  1fr);
     gap: 10px;
+    
 }
-.box3 strong{
-    line-height: 1.4;
-}
-.box3{
-    padding: 16px;
+
+.box3 {
     background-color: var(--bg-card-dark);
-
+    padding: 10px;
 }
-.box3 p {
-    line-height: 1.4;
+.box3 p{
     color: var(--text-muted);
-    margin-bottom: 30px;
 }
-
-.box3  a {
-    color: var(--accent);
+.box3 p a{
     text-decoration: none;
+    color: var(--accent);
 }
 
-.box3 img {
-    border-radius: 5px;
+
+ .box3 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-.midpara2,
-.midpara3 {
+
+.midpara2 {
+
     color: var(--text-main);
     margin-top: 220px;
     margin-bottom: 30px;
     font-size: 30px;
-    /* font-weight: 530; */
+}
+
+.midpara3 {
+    color: var(--text-main);
+    margin-top: 220px;
+    margin-bottom: 30px;
+    font-size: 26px;
 }
 
 .container4 {
@@ -229,7 +246,7 @@ button:hover{
 
 .box4 {
     background-color: var(--bg-card);
-    height: 15vh;
+    min-height: 20vh;
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -238,41 +255,43 @@ button:hover{
 .rating {
     padding: 3px 15px;
     border: 2px solid var(--text-muted-alt);
-    border-radius: 999px;
+    border-radius: 50px;
     opacity: 0.9;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 .rating,
 .date {
-    font-size: 20px;
+    font-size: 15px;
     color: var(--text-muted-alt);
 }
 
 .box4 p {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .midpara4 a {
     color: var(--accent);
     text-decoration: none;
-    font-size: 22px;
+    font-size: 1rem;
 }
 
 .midpara5 {
     color: var(--text-main);
-    font-size: 38px;
+    font-size: 26px;
     margin-top: 200px;
 }
 
 .btn-2 {
-    width: 6vw;
-    height: 5vh;
-    font-size: 20px;
+    min-width: 35px;
+    min-height: 20px;
+    padding: 10px;
+    font-size: 1rem;
     border-radius: 50px;
     margin-top: 20px;
     margin-bottom: 70px;
+    border: none;
 }
 
 .container5 {
@@ -296,7 +315,8 @@ button:hover{
     padding: 24px;
     border-radius: 5px;
 }
-.box5 p{
+
+.box5 p {
     /* line-height: 2; */
     color: var(--text-muted);
 }
@@ -347,9 +367,10 @@ button:hover{
 
 .btn-Mac {
     font-size: 16px;
-    width: 15vw;
-    height: 5vh;
+    width: 20vw;
+    height: 8vh;
     border-radius: 50px;
+    border: none;
 }
 
 .btn-3 {
@@ -358,6 +379,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     margin-bottom: 8%;
+    border: none;
 }
 
 footer {
